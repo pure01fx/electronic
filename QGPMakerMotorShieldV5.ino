@@ -12,6 +12,7 @@ PS2X                  ps2x;
 QGPMaker_MotorShield  AFMS = QGPMaker_MotorShield();
 QGPMaker_DCMotor      *DCMotor_1 = AFMS.getMotor(1);
 
+#if false
 
 void setup() {
 	Serial.begin(9600);
@@ -35,3 +36,5 @@ void loop() {
 	}
   delay(10);
 }
+
+#endif
