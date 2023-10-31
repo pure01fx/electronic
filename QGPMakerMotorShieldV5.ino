@@ -3,6 +3,8 @@
  * uno
  *
  */
+
+#if false
 #include <Wire.h>
 #include "PS2X_lib.h"
 #include "QGPMaker_MotorShield.h"
@@ -11,8 +13,6 @@
 PS2X                  ps2x;
 QGPMaker_MotorShield  AFMS = QGPMaker_MotorShield();
 QGPMaker_DCMotor      *DCMotor_1 = AFMS.getMotor(1);
-
-#if false
 
 void setup() {
 	Serial.begin(9600);
